@@ -40,7 +40,7 @@ module.exports = function(params, callback){
 		}
 	});
 	// returns promise
-	if(!callback){
+	if (!callback){
 		return deferred.promise;
 	}
 };
