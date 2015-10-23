@@ -1,11 +1,11 @@
 var fhir = require('./controllers/fhir-api');
 var Q = require('q');
 
-module.exports = function(params, callback){
-	var pages = params.pages;
-	var start = params.start;
-	var end = params.end;
-	var format = params.format;
+module.exports = function(options, callback){
+	var pages = options.pages;
+	var start = options.start;
+	var end = options.end;
+	var format = options.format;
 	var url ='';
 	
 	var calls = [];
@@ -20,7 +20,8 @@ module.exports = function(params, callback){
 		'&_count='+count+
 		'&_format='+format+
 		'&_pretty=true';
-		calls.push(url);
+		console.log(url);
+		calls.push(fhir(url));
 	}
 	
 	var api = Q.all(calls);
@@ -33,6 +34,7 @@ module.exports = function(params, callback){
 			}
 		}
 		// runs callback if present
+		console.log(patients);
 		if (!callback){
 			deferred.resolve(patients);
 		} else{
