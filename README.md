@@ -30,10 +30,10 @@ var fhir = require('fhir-node');
 	
 ####promise
 	fhir(params).then(function(records){
-		res.json(records);
+		console.log(records);
 	});
 	
 ####callback
 	fhir(params, function(records){
-		res.json(records);
+		console.log(records);
 	});
