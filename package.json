@@ -1,5 +1,5 @@
 {
-  "name": "fhir",
+  "name": "fhir-node",
   "version": "1.0.0",
   "description": "node module for fhir api requests",
   "main": "index.js",
