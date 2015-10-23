@@ -33,14 +33,14 @@ module.exports = function(params, callback){
 			}
 		}
 		// runs callback if present
-		if (callback){
-			callback(patients);
-		} else{
+		if (!callback){
 			deferred.resolve(patients);
+		} else{
+			callback(patients);
 		}
 	});
 	// returns promise
-	if(deferred.promise){
+	if(!callback){
 		return deferred.promise;
 	}
 };
