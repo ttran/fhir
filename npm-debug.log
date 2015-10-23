@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/thtran/Documents/dev/GT/CS-6440/fhir-node',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/thtran/.npm/fhir-node/1.0.4/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/thtran/.npm/fhir-node/1.0.4/package.tgz',
+9 verbose tar pack   '/Users/thtran/Documents/dev/GT/CS-6440/fhir-node' ]
+10 verbose tarball /Users/thtran/.npm/fhir-node/1.0.4/package.tgz
+11 verbose folder /Users/thtran/Documents/dev/GT/CS-6440/fhir-node
+12 info prepublish fhir-node@1.0.4
+13 verbose addLocalTarball adding from inside cache /Users/thtran/.npm/fhir-node/1.0.4/package.tgz
+14 silly cache afterAdd fhir-node@1.0.4
+15 verbose afterAdd /Users/thtran/.npm/fhir-node/1.0.4/package/package.json not in flight; writing
+16 verbose afterAdd /Users/thtran/.npm/fhir-node/1.0.4/package/package.json written
+17 silly publish { name: 'fhir-node',
+17 silly publish   version: '1.0.4',
+17 silly publish   description: 'node module for fhir api requests',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository: { type: 'git', url: 'https://github.com/ttran/fhir.git' },
+17 silly publish   keywords: [ 'fhir', 'api' ],
+17 silly publish   author: { name: 'Thuc Tran' },
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/ttran/fhir/issues' },
+17 silly publish   homepage: 'https://github.com/ttran/fhir',
+17 silly publish   dependencies: { async: '^1.4.2', q: '^1.4.1', 'request-promise': '^1.0.2' },
+17 silly publish   readme: '# fhir\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '422ab01c129a5dbe07a9fd142344b26ee48c086b',
+17 silly publish   _id: 'fhir-node@1.0.4',
+17 silly publish   _shasum: '5a3e0def22db1acf1adf2ca42f91f7ad7acff061',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name fhir-node
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/fhir-node
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading /Users/thtran/.npm/fhir-node/1.0.4/package.tgz
+24 verbose request uri https://registry.npmjs.org/fhir-node
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 3:43:50 PM
+27 verbose request using bearer token for auth
+28 verbose request id 1b9931def0225e98
+29 http request PUT https://registry.npmjs.org/fhir-node
+30 http 403 https://registry.npmjs.org/fhir-node
+31 verbose headers { 'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '95',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Fri, 23 Oct 2015 19:43:50 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-lax1422-LAX',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1445629430.774193,VS0,VE212' }
+32 verbose request invalidating /Users/thtran/.npm/registry.npmjs.org/fhir-node on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: "You cannot publish over the previously published version 1.0.4." : fhir-node
+34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+34 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+34 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+34 verbose stack     at Request.emit (events.js:110:17)
+34 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+34 verbose stack     at Request.emit (events.js:129:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+34 verbose stack     at IncomingMessage.emit (events.js:129:20)
+34 verbose stack     at _stream_readable.js:908:16
+34 verbose stack     at process._tickCallback (node.js:355:11)
+35 verbose statusCode 403
+36 verbose pkgid fhir-node
+37 verbose cwd /Users/thtran/Documents/dev/GT/CS-6440/fhir-node
+38 error Darwin 14.5.0
+39 error argv "node" "/usr/local/bin/npm" "publish"
+40 error node v0.12.2
+41 error npm  v2.7.4
+42 error code E403
+43 error "You cannot publish over the previously published version 1.0.4." : fhir-node
+44 error If you need help, you may report this error at:
+44 error     <https://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
