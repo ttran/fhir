@@ -20,7 +20,6 @@ module.exports = function(options, callback){
 		'&_count='+count+
 		'&_format='+format+
 		'&_pretty=true';
-		console.log(url);
 		calls.push(fhir(url));
 	}
 	
@@ -34,7 +33,6 @@ module.exports = function(options, callback){
 			}
 		}
 		// runs callback if present
-		console.log(patients);
 		if (!callback){
 			deferred.resolve(patients);
 		} else{
