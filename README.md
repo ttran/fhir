@@ -37,3 +37,5 @@ var fhir = require('fhir-node');
 	fhir(params, function(records){
 		console.log(records);
 	});
+
+Currently only returns "entry" records (does not return metadata regarding the request).
