@@ -39,3 +39,4 @@ var fhir = require('fhir-node');
 	});
 
 Currently only returns "entry" records (does not return metadata regarding the request).
+Also currently reads from read-only server.
