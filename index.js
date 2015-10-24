@@ -15,7 +15,7 @@ module.exports = function(options, callback){
 		if (offset+50>end){
 			count = end-offset;
 		}
-		url = 'http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp/base?_getpages='+pages+
+		url = 'http://polaris.i3l.gatech.edu:8080/gt-fhir-webapp-ro/base?_getpages='+pages+
 		'&_getpagesoffset='+offset+
 		'&_count='+count+
 		'&_format='+format+
