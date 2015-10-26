@@ -31,10 +31,20 @@ var fhir = require('fhir-node');
 		console.log(records);
 	});
 	
+	fhir().then(function(records){
+		console.log(records);
+	});
+	
 ####callback
 	fhir(params, function(records){
 		console.log(records);
 	});
+	
+	fhir(null, function(records){
+		console.log(records);
+	});
+
+Leaving options empty or null will result in querying the entire patient list.
 
 Currently only returns "entry" records (does not return metadata regarding the request).
 Also currently reads from read-only server.
