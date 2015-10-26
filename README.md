@@ -3,10 +3,9 @@
 This node npm package allows for the propagation of FHIR requests to GT's FHIR database.
 
 The module requires a parameter/options object that has 4 parameters:
-  1. pages
-  2. start
-  3. end
-  4. format
+  1. start
+  2. end
+  3. format
 
 The module also has an optional callback function. If this parameter is left empty, it returns a promise.
 
